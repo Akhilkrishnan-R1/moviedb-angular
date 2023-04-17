@@ -1,0 +1,4 @@
+<app-banner [banner]="bannerData"></app-banner>
+<div class="contain mt-3 p-4">
+    <app-movie-row *ngFor="let t of rowData" [title]="t.title" [genreID]="t.genreID"></app-movie-row>
+</div>
