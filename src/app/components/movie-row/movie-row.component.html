@@ -1,0 +1,13 @@
+<div class="row">
+  <h5 class="text-white">{{ title }}</h5>
+  <div class="rowposter mt-3 p-2">
+    <ng-container *ngFor="let r of rowData">
+      <img
+        src="https://image.tmdb.org/t/p/original/{{ r.poster_path }}"
+        alt=""
+        class="rowimg largeposter"
+        routerLink="/movie/{{r.id}}"
+      />
+    </ng-container>
+  </div>
+</div>
